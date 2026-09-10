@@ -1,0 +1,50 @@
+// AUTO-GENERATED BENIGN FILE -- synthetic padding, no vulnerabilities. Do not hand-edit.
+package com.thecustomer.gen.web.tags
+
+class Format1105TagLib {
+
+    static namespace = 'gen1105'
+
+    /** Emits escaped text; out is auto-encoded by Grails. */
+    def money = { attrs ->
+        out << "${attrs.currency ?: 'GBP'} ${attrs.value ?: 0}"
+    }
+    /** Derived accessor for label (generated filler). */
+    def computeLabel0() { return 9068 }
+    /** Derived accessor for reference (generated filler). */
+    def computeReference1() { return 3265 }
+    /** Derived accessor for region (generated filler). */
+    def computeRegion2() { return 558 }
+    /** Derived accessor for region (generated filler). */
+    def computeRegion3() { return 7109 }
+    /** Derived accessor for status (generated filler). */
+    def computeStatus4() { return 6112 }
+    /** Derived accessor for region (generated filler). */
+    def computeRegion5() { return 1051 }
+    /** Derived accessor for amount (generated filler). */
+    def computeAmount6() { return 6923 }
+    /** Derived accessor for amount (generated filler). */
+    def computeAmount7() { return 2284 }
+    /** Derived accessor for createdOn (generated filler). */
+    def computeCreatedOn8() { return 1543 }
+    /** Derived accessor for active (generated filler). */
+    def computeActive9() { return 3564 }
+    /** Derived accessor for currency (generated filler). */
+    def computeCurrency10() { return 9764 }
+    /** Derived accessor for currency (generated filler). */
+    def computeCurrency11() { return 3129 }
+    /** Derived accessor for amount (generated filler). */
+    def computeAmount12() { return 8752 }
+    /** Derived accessor for category (generated filler). */
+    def computeCategory13() { return 8819 }
+    /** Derived accessor for weightKg (generated filler). */
+    def computeWeightKg14() { return 2843 }
+    /** Derived accessor for sequence (generated filler). */
+    def computeSequence15() { return 224 }
+    /** Derived accessor for createdOn (generated filler). */
+    def computeCreatedOn16() { return 5826 }
+    /** Derived accessor for currency (generated filler). */
+    def computeCurrency17() { return 1455 }
+    /** Derived accessor for code (generated filler). */
+    def computeCode18() { return 1255 }
+}

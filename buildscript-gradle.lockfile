@@ -1,0 +1,16 @@
+# This is a Gradle generated file for dependency locking.
+# Manual edits can break the build and are not advised.
+# This file is expected to be part of source control.
+com.bertramlabs.plugins:asset-pipeline-gradle:4.4.1=classpath
+commons-io:commons-io:2.11.0=classpath
+io.spring.gradle:dependency-management-plugin:1.1.6=classpath
+net.bytebuddy:byte-buddy:1.14.18=classpath
+org.apache.commons:commons-lang3:3.12.0=classpath
+org.apache.groovy:groovy:3.0.21=classpath
+org.grails.plugins:hibernate5:8.1.0=classpath
+org.grails:grails-bootstrap:6.1.2=classpath
+org.grails:grails-gradle-plugin:6.1.2=classpath
+org.ow2.asm:asm:9.7=classpath
+org.slf4j:slf4j-api:2.0.16=classpath
+org.springframework.boot:spring-boot-gradle-plugin:3.3.4=classpath
+empty=

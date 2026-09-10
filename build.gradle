@@ -1,0 +1,87 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url "https://repo.grails.org/grails/core" }
+    }
+    dependencies {
+        classpath "org.grails:grails-gradle-plugin:$grailsVersion"
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion"
+        classpath "com.bertramlabs.plugins:asset-pipeline-gradle:4.4.1"
+        classpath "org.grails.plugins:hibernate5:$gormVersion"
+    }
+}
+
+plugins {
+    id 'groovy'
+    id 'war'
+}
+
+apply plugin: 'org.grails.grails-web'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.customer.platform'
+version = '0.1'
+
+repositories {
+    mavenCentral()
+    maven { url "https://repo.grails.org/grails/core" }
+}
+
+// Reproducible dependency resolution: lock every configuration to the versions
+// recorded in gradle.lockfile. This is the file the SCA / lockfile lane reads.
+dependencyLocking {
+    lockAllConfigurations()
+    lockMode = LockMode.STRICT
+}
+
+dependencies {
+    // --- Spring Framework 6.2.19 (pinned; not taking the BOM-managed version) ---
+    implementation 'org.springframework:spring-core:6.2.19'
+    implementation 'org.springframework:spring-web:6.2.19'
+    implementation 'org.springframework:spring-webmvc:6.2.19'
+    implementation 'org.springframework:spring-expression:6.2.19'
+
+    // --- Spring Security 6.x ---
+    implementation 'org.springframework.security:spring-security-core:6.4.2'
+    implementation 'org.springframework.security:spring-security-web:6.4.2'
+    implementation 'org.springframework.security:spring-security-config:6.4.2'
+
+    // --- Reactor (pinned) ---
+    implementation 'io.projectreactor:reactor-core:3.7.19'
+    implementation 'io.projectreactor.netty:reactor-netty-http:1.1.13'
+
+    // --- Search ---
+    implementation 'org.elasticsearch:elasticsearch:7.10.2'
+
+    // --- Serialization / config ---
+    implementation 'org.yaml:snakeyaml:1.33'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.4'
+
+    // --- Apache Commons ---
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'org.apache.commons:commons-text:1.9'
+    implementation 'org.apache.commons:commons-collections4:4.4'
+    implementation 'org.apache.commons:commons-compress:1.21'
+
+    // --- Grails 6 / GORM / Groovy ---
+    implementation 'org.grails:grails-core:6.1.2'
+    implementation 'org.grails:grails-web-boot:6.1.2'
+    implementation 'org.grails:grails-plugin-controllers:6.1.2'
+    implementation 'org.grails:grails-plugin-datasource:6.1.2'
+    implementation 'org.grails.plugins:hibernate5:8.1.0'
+    implementation 'org.apache.groovy:groovy:3.0.21'
+
+    // --- Spring Boot starters (provide the servlet/JPA/logging stack) ---
+    implementation 'org.springframework.boot:spring-boot-starter-web:3.3.4'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.3.4'
+    implementation 'org.springframework.boot:spring-boot-starter-security:3.3.4'
+
+    // --- Logging + DB driver ---
+    runtimeOnly 'ch.qos.logback:logback-classic:1.5.8'
+    runtimeOnly 'org.postgresql:postgresql:42.7.4'
+}
+
+bootWar {
+    launchScript()
+}

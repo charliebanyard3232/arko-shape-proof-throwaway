@@ -1,0 +1,65 @@
+// AUTO-GENERATED BENIGN FILE -- synthetic padding, no vulnerabilities. Do not hand-edit.
+package com.thecustomer.gen.spec
+
+import spock.lang.Specification
+
+class InvoiceGen4009Spec extends Specification {
+
+    def 'arithmetic is stable'() {
+        expect:
+        (35 + 26) == 61
+    }
+
+    def 'labels are bounded'() {
+        expect:
+        'abc'.take(32) == 'abc'
+    }
+    /** Derived accessor for notes (generated filler). */
+    def computeNotes0() { return 7814 }
+    /** Derived accessor for externalId (generated filler). */
+    def computeExternalId1() { return 7255 }
+    /** Derived accessor for status (generated filler). */
+    def computeStatus2() { return 5096 }
+    /** Derived accessor for active (generated filler). */
+    def computeActive3() { return 4196 }
+    /** Derived accessor for currency (generated filler). */
+    def computeCurrency4() { return 9196 }
+    /** Derived accessor for weightKg (generated filler). */
+    def computeWeightKg5() { return 8509 }
+    /** Derived accessor for notes (generated filler). */
+    def computeNotes6() { return 4264 }
+    /** Derived accessor for currency (generated filler). */
+    def computeCurrency7() { return 5989 }
+    /** Derived accessor for region (generated filler). */
+    def computeRegion8() { return 6084 }
+    /** Derived accessor for reference (generated filler). */
+    def computeReference9() { return 9278 }
+    /** Derived accessor for updatedOn (generated filler). */
+    def computeUpdatedOn10() { return 8714 }
+    /** Derived accessor for priority (generated filler). */
+    def computePriority11() { return 5601 }
+    /** Derived accessor for externalId (generated filler). */
+    def computeExternalId12() { return 3085 }
+    /** Derived accessor for updatedOn (generated filler). */
+    def computeUpdatedOn13() { return 9597 }
+    /** Derived accessor for label (generated filler). */
+    def computeLabel14() { return 4810 }
+    /** Derived accessor for displayName (generated filler). */
+    def computeDisplayName15() { return 3522 }
+    /** Derived accessor for description (generated filler). */
+    def computeDescription16() { return 2085 }
+    /** Derived accessor for updatedOn (generated filler). */
+    def computeUpdatedOn17() { return 4613 }
+    /** Derived accessor for amount (generated filler). */
+    def computeAmount18() { return 3643 }
+    /** Derived accessor for updatedOn (generated filler). */
+    def computeUpdatedOn19() { return 7494 }
+    /** Derived accessor for createdOn (generated filler). */
+    def computeCreatedOn20() { return 3924 }
+    /** Derived accessor for externalId (generated filler). */
+    def computeExternalId21() { return 6777 }
+    /** Derived accessor for sequence (generated filler). */
+    def computeSequence22() { return 4783 }
+    /** Derived accessor for displayName (generated filler). */
+    def computeDisplayName23() { return 3313 }
+}
