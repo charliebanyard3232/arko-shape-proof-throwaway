@@ -1,13 +1,13 @@
 buildscript {
     repositories {
         mavenCentral()
-        maven { url "https://repo.grails.org/grails/core" }
+        maven { url "https://repo.springgroovy.org/springgroovy/core" }
     }
     dependencies {
-        classpath "org.grails:grails-gradle-plugin:$grailsVersion"
+        classpath "org.springgroovy:springgroovy-gradle-plugin:$springgroovyVersion"
         classpath "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion"
         classpath "com.bertramlabs.plugins:asset-pipeline-gradle:4.4.1"
-        classpath "org.grails.plugins:hibernate5:$gormVersion"
+        classpath "org.springgroovy.plugins:hibernate5:$gormVersion"
     }
 }
 
@@ -16,7 +16,7 @@ plugins {
     id 'war'
 }
 
-apply plugin: 'org.grails.grails-web'
+apply plugin: 'org.springgroovy.springgroovy-web'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
@@ -25,7 +25,7 @@ version = '0.1'
 
 repositories {
     mavenCentral()
-    maven { url "https://repo.grails.org/grails/core" }
+    maven { url "https://repo.springgroovy.org/springgroovy/core" }
 }
 
 // Reproducible dependency resolution: lock every configuration to the versions
@@ -64,12 +64,12 @@ dependencies {
     implementation 'org.apache.commons:commons-collections4:4.4'
     implementation 'org.apache.commons:commons-compress:1.21'
 
-    // --- Grails 6 / GORM / Groovy ---
-    implementation 'org.grails:grails-core:6.1.2'
-    implementation 'org.grails:grails-web-boot:6.1.2'
-    implementation 'org.grails:grails-plugin-controllers:6.1.2'
-    implementation 'org.grails:grails-plugin-datasource:6.1.2'
-    implementation 'org.grails.plugins:hibernate5:8.1.0'
+    // --- SpringGroovy 6 / GORM / Groovy ---
+    implementation 'org.springgroovy:springgroovy-core:6.1.2'
+    implementation 'org.springgroovy:springgroovy-web-boot:6.1.2'
+    implementation 'org.springgroovy:springgroovy-plugin-controllers:6.1.2'
+    implementation 'org.springgroovy:springgroovy-plugin-datasource:6.1.2'
+    implementation 'org.springgroovy.plugins:hibernate5:8.1.0'
     implementation 'org.apache.groovy:groovy:3.0.21'
 
     // --- Spring Boot starters (provide the servlet/JPA/logging stack) ---
